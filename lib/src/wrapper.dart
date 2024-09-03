@@ -358,6 +358,7 @@ class _MentionSuggestionList extends StatelessWidget {
     final highlightedIndex = AutocompleteHighlightedOption.of(context);
     return Card(
       clipBehavior: Clip.antiAlias,
+      color: const Color(0xFF353535),
       child: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -376,8 +377,36 @@ class _MentionSuggestionList extends StatelessWidget {
                       child: Container(
                         color:
                             highlighted ? Theme.of(context).focusColor : null,
-                        padding: const EdgeInsets.all(16.0),
-                        child: Text(e.value),
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            if (e.payload['profileImage'] != null)
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(5),
+                                child: Image.network(
+                                  e.payload['profileImage'],
+                                  width: 44,
+                                  height: 44,
+                                  fit: BoxFit.contain,
+                                  errorBuilder: (BuildContext context,
+                                      Object exception,
+                                      StackTrace? stackTrace) {
+                                    return const Icon(
+                                      Icons.person,
+                                      color: Colors.grey,
+                                    );
+                                  },
+                                ),
+                              ),
+                            if (e.payload['profileImage'] != null)
+                              const SizedBox(
+                                width: 10,
+                              ),
+                            Text(
+                              e.value,
+                            )
+                          ],
+                        ),
                       ),
                     );
                   }))

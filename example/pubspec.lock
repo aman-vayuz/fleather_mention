@@ -69,17 +69,17 @@ packages:
     dependency: "direct main"
     description:
       name: fleather
-      sha256: "4e5260e136c4d371bffd870148a838671599f08b564fd831112a9e664bd909e9"
+      sha256: f4555f9d103597646a33eb42e5507bd4c10c4036ea5132988d7e6f258144f032
       url: "https://pub.dev"
     source: hosted
-    version: "1.14.1"
+    version: "1.14.5+1"
   fleather_mention:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.4"
+    version: "0.0.5"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -102,10 +102,10 @@ packages:
     dependency: transitive
     description:
       name: intl
-      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
+      sha256: d6f56758b7d3014a48af9701c085700aac781a92a87a62b1333b46d8879661cf
       url: "https://pub.dev"
     source: hosted
-    version: "0.18.1"
+    version: "0.19.0"
   matcher:
     dependency: transitive
     description:
@@ -134,10 +134,10 @@ packages:
     dependency: transitive
     description:
       name: parchment
-      sha256: "67c8ea89d62abecf75a802e1cae227dfdeead6a458e53c44ee0c39c38a6327e2"
+      sha256: f200be9988c72b3abb9d5f6b7dfa843dddb1e33ec16533e580b2f11161666d53
       url: "https://pub.dev"
     source: hosted
-    version: "1.14.0"
+    version: "1.18.0"
   parchment_delta:
     dependency: transitive
     description:
@@ -158,10 +158,10 @@ packages:
     dependency: transitive
     description:
       name: quiver
-      sha256: "93982981971e812c94d4a6fa3a57b89f9ec12b38b6380cd3c1370c3b01e4580e"
+      sha256: ea0b925899e64ecdfbf9c7becb60d5b50e706ade44a85b2363be2a22d88117d2
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "3.2.2"
   sky_engine:
     dependency: transitive
     description: flutter
